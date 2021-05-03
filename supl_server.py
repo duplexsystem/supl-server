@@ -1,6 +1,6 @@
-from tls_server import *
-from supl_session import *
-from supl_logger import logger
+from common.tls_server import *
+from common.supl_session import *
+from common.supl_logger import logger
 
 class SuplServer(TlsServerCallback):
     def __init__(self):

@@ -3,8 +3,8 @@ from pycrate_asn1dir import ULP
 from pycrate_asn1dir import RRLP
 from pycrate_asn1rt.utils import *
 
-from supl_logger import logger
-from rrlp_session import *
+from common.supl_logger import logger
+from common.rrlp_session import *
 
 class SuplSession:
     def __init__(self, supl_server, client_fileno):

@@ -2,7 +2,7 @@ import socket
 import ssl
 import select
 import os
-from supl_logger import logger
+from common.supl_logger import logger
 
 class TlsServerCallback:
     def process_client_connected(self, client_sock):
@@ -74,7 +74,7 @@ class TlsServer:
         logger.debug('Create socket')
         serversocket = socket.socket()
         serversocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        serversocket.bind(('192.168.1.30', 7275))
+        serversocket.bind(('127.0.0.1', 7275))
 
         logger.debug('Listenning...')
         serversocket.listen()

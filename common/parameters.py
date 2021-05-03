@@ -12,12 +12,12 @@ class Parameters:
     GSM_REF_LAC = 23010
     GSM_REF_CI = 12720
 
-    FQDN = 'supl.vodafone.com'
+    #FQDN = 'supl.vodafone.com'
     #FQDN = 'supl.google.com'
-    #FQDN = '192.168.1.30'
+    FQDN = '127.0.0.1'
     PORT = 7275
 
     IMSI = bytes.fromhex('FFFF919448458398')
 
-    RRLP_ENABLED = False
+    RRLP_ENABLED = True
     LPP_ENABLED = True

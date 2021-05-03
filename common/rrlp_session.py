@@ -120,6 +120,6 @@ class RrlpSession:
         }
         rrlp_assit_data["component"][1]["gps-AssistData"]["controlHeader"]["almanac"]["almanacList"].append(almanacList1)
 
-        rrlp_pdu = RRLP.RRLP_Messages.PDU
+        rrlp_pdu = RRLP.RRLP_messages.PDU
         rrlp_pdu.set_val(rrlp_assit_data)
         return rrlp_pdu.to_uper()
